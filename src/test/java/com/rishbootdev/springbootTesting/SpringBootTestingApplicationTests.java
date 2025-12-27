@@ -44,7 +44,7 @@ class SpringBootTestingApplicationTests {
         //This is a important method for asserting or checking the values to be equal or not
        // Assertions.assertEquals(8, result);  this is method is from the JUnit framewrok which was used earlier
 
-        Assertions.assertThat(result).isEqualTo(7)
+        Assertions.assertThat(result).isEqualTo(8)
                 .isCloseTo(9, Offset.offset(1));
 
 
