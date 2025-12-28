@@ -106,7 +106,6 @@ class EmployeeServiceImplTest {
 
         Employee captured=employeeArgumentCaptor.getValue();
         assertThat(captured.getEmail()).isEqualTo(mockemployee.getEmail());
-
     }
 
     @Test
