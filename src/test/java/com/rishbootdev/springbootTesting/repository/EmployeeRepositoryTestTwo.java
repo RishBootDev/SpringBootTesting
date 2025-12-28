@@ -11,9 +11,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.data.jpa.test.autoconfigure.DataJpaTest;
-import org.springframework.boot.jdbc.test.autoconfigure.AutoConfigureTestDatabase;
 import org.springframework.context.annotation.Import;
-
 import java.util.List;
 
 
@@ -38,7 +36,6 @@ public class EmployeeRepositoryTestTwo {
                 .email("rishbootdev@gmail.com")
                 .salary(235000L)
                 .build();
-
     }
 
     @AfterEach
@@ -66,7 +63,6 @@ public class EmployeeRepositoryTestTwo {
 
     }
 
-
     @Test
     void test_getByEmail_whenEmail_isNotFound_thenReturnEmpty_EmployeeList() {
 
@@ -79,7 +75,6 @@ public class EmployeeRepositoryTestTwo {
         // Then
         Assertions.assertThat(employeeList)
                 .isNotNull();
-
 
     }
 }
