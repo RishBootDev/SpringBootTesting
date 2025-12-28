@@ -3,10 +3,12 @@ package com.rishbootdev.springbootTesting.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+import lombok.extern.slf4j.Slf4j;
 
 @Getter
 @Setter
 @Entity
+@Slf4j
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
