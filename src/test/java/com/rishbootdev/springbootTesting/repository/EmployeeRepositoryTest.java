@@ -84,7 +84,7 @@ class EmployeeRepositoryTest {
 /*
     By default, it will use my mySql database, but we will use
     the H2 database for the testing purposes and to connect it
-    we have this annotation  ---> @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.ANY)
+    we have to use this annotation  ---> @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.ANY)
 
     since in this file we are only testing the springboot data persistence, and we are not
     looking for spinning up web server during the execution of the test cases then we will use
